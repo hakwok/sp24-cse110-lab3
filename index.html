@@ -40,8 +40,12 @@
         </section>
         <section>
             <img src="https://th.bing.com/th/id/R.41658285756338a56135cb10704e289f?rik=qrsITjbnqt3Fkw&riu=http%3a%2f%2fstatic.demilked.com%2fwp-content%2fuploads%2f2018%2f03%2f5aaa1cc1d8480-funny-weird-wtf-stock-photos-1-5a39255d726bb__700.jpg&ehk=74VQp%2b8Dt4srpSzU8ldMSUZbE9RkUIVh6Sm1ziNXpz8%3d&risl=&pid=ImgRaw&r=0" alt="questionable image">
-            <video src="9_10_21.mp4"></video>
-            <audio src="91021.mp3"></audio>
+            <video controls>
+                <source src="9_10_21.mp4" type="video/mp4">
+            </video>
+            <audio controls>
+                <source src="91021.mp3">
+            </audio>
             <div>
                 <span></span>
             </div>
@@ -57,7 +61,7 @@
                 <label for="birthdate">Birthdate:</label>
                 <input type="date" id="birthdate" name="birthdate"><br><br>
                 
-                <label for="gender">Gender:</label>
+                <label>Gender:</label>
                 <input type="radio" id="male" name="gender" value="male">
                 <label for="male">Male</label>
                 <input type="radio" id="female" name="gender" value="female">
