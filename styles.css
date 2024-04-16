@@ -1,0 +1,166 @@
+/*comment*/
+* {
+    box-sizing: border-box;
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFF;
+    color: rgb(50, 50, 50);
+    padding: 5vh;
+    margin-bottom: 2vw;
+}
+
+:root {
+    --main-bg-color: rgba(255, 255, 255, 0.8);
+}
+
+h1, h2, h3 {
+    color: hsl(0, 0%, 20%);
+}
+
+h1 {
+    font-size: 2em;
+}
+
+nav ul li {
+    color: orange;
+}
+
+div {
+    color: color(srgb 0 100% 0);
+}
+
+span {
+    color: color-mix(in srgb, red 50%, blue 50%);
+}
+
+header {
+    margin: 20px auto;
+    padding: 1cm;
+    border: 1px solid black;
+}
+
+section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: solid;
+    border-color: #333;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+h2 {
+    color: black;
+    text-decoration: underline;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+video {
+    position: sticky;
+    display: inline-block;
+    min-width: 10px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5in;
+}
+
+.header-info {
+    color: navy;
+}
+
+#main-content {
+    padding: 20px;
+}
+
+input[type="text"] {
+    background-color: #f0f0f0;
+}
+
+a:hover {
+    color: red;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+  
+header > h1 {
+    margin-top: 0;  
+}
+  
+h1 ~ p {
+    color: gray;
+}
+  
+h1 + h2 {
+    margin-top: 5px;
+}
+  
+button.primary-button {
+    background-color: blue;
+    color: white;
+}
+  
+div:has(> .important) {
+    border: 2px solid red;
+}
+  
+@media (min-width: 768px) {
+    body {
+      font-size: 16px;
+      background-color: #e3e3e3;
+    }
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+button:active {
+    background-color: #ccc;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+}
+
