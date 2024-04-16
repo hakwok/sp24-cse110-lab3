@@ -3,7 +3,6 @@
     box-sizing: border-box;
   }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #FFF;
@@ -29,11 +28,11 @@ nav ul li {
 }
 
 div {
-    color: color(srgb 0 100% 0);
+    color: color(0 100% 0);
 }
 
 span {
-    color: color-mix(in srgb, red 50%, blue 50%);
+    color: color-mix(red 50%, blue 50%);
 }
 
 header {
